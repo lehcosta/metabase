@@ -15,7 +15,7 @@
   "env": {
   },
   "addons": [
-    "heroku-postgresql"
+    "heroku-postgresq:hobby-basic"
   ],
   "buildpacks": [
     { "url": "https://github.com/heroku/heroku-buildpack-nodejs" },
