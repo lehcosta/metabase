@@ -45,7 +45,7 @@ fi
 git_remote_ref="refs/heads/master"
 
 if ! heroku ps -a "$heroku_app_name" > /dev/null; then
-    heroku apps:create -n --addons "heroku-postgresql:hobby-dev" "$heroku_app_name"
+    heroku apps:create -n --addons "heroku-postgresql:hobby-basic" "$heroku_app_name"
     heroku buildpacks:clear -a "$heroku_app_name"
     heroku buildpacks:add "https://github.com/heroku/heroku-buildpack-nodejs#yarn" -a "$heroku_app_name"
     heroku buildpacks:add "https://github.com/heroku/heroku-buildpack-clojure" -a "$heroku_app_name"
